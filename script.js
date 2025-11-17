@@ -1,8 +1,8 @@
 //lista de producto simulada
 const productos = [
-    { id: 1, nombre: "Remera", precio: 100 },
-    { id: 2, nombre: "Pantalon", precio: 200 },
-    { id: 3, nombre: "Suete", precio: 300 },
+    { id: 1, nombre: "Remera", precio: 100, imagen: "img/1.jpg" },
+    { id: 2, nombre: "Gorra", precio: 200, imagen: "img/2.jpg" },
+    { id: 3, nombre: "Buzo", precio: 300, imagen: "img/3.jpg" },
 ];
 
 let carrito = [];
@@ -10,10 +10,27 @@ let carrito = [];
 //renderizar productos
 const contenedorProductos = document.getElementById("contenedor-productos");
 productos.forEach(producto => {
-    const btn = document.createElement("button");
-    btn.textContent = `Agregar ${producto.nombre} - $${producto.precio}`;
-    btn.onclick = () => agregarAlCarrito(producto.id);
-    contenedorProductos.appendChild(btn);
+    const card = document.createElement("div");
+    card.className = "producto-card";
+    
+    const img = document.createElement("img");
+    img.src = producto.imagen;
+    img.alt = producto.nombre;
+    
+    const nombre = document.createElement("div");
+    nombre.className = "producto-nombre";
+    nombre.textContent = producto.nombre;
+    
+    const precio = document.createElement("div");
+    precio.className = "producto-precio";
+    precio.textContent = `$${producto.precio}`;
+    
+    card.appendChild(img);
+    card.appendChild(nombre);
+    card.appendChild(precio);
+    card.onclick = () => agregarAlCarrito(producto.id);
+    
+    contenedorProductos.appendChild(card);
 });
 
 //funcion para agregar al carrito
