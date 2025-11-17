@@ -3,20 +3,107 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Carrito de Compras</title>
+    <title>StyleHub - Tienda de Ropa Premium</title>
     <link rel="stylesheet" href="style.css">
-    <style>
-        
-    </style>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
 </head>
 <body>
-    <h1>Carrito de Compras</h1>
-    <h2>Productos</h2>
-    <div id="contenedor-productos"></div>
-    
-    <h2>Carrito</h2>
-    <ul id="lista-carrito"></ul>
-    <div id="total-carrito">Total: $0</div>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="navbar-brand">
+                <i class="fas fa-shirt"></i>
+                <span>DownShop</span>
+            </div>
+            <div class="navbar-menu">
+                <a href="#" class="nav-link active">Inicio</a>
+                <a href="#" class="nav-link">Productos</a>
+                <a href="#" class="nav-link">Ofertas</a>
+                <a href="#" class="nav-link">Contacto</a>
+            </div>
+            <div class="navbar-cart">
+                <button id="btn-carrito" class="cart-btn">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span id="contador-carrito" class="cart-count">0</span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Bienvenido a DownShop</h1>
+            <p>Descubre una coleccion especial que te espera.</p>
+            <button class="btn-primary">Explorar Colección</button>
+        </div>
+    </section>
+
+    <!-- Filtros -->
+    <section class="filtros-section">
+        <div class="filtros-container">
+            <h2>Nuestros Productos</h2>
+            <div class="filtros">
+                <button class="filtro-btn active" data-filtro="todos">Todos</button>
+                <button class="filtro-btn" data-filtro="remeras">Remeras</button>
+                <button class="filtro-btn" data-filtro="buzos">Buzos</button>
+                <button class="filtro-btn" data-filtro="accesorios">Accesorios</button>
+                <button class="filtro-btn" data-filtro="especiales">Especiales</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Productos -->
+    <main class="main-content">
+        <div class="productos-grid" id="contenedor-productos"></div>
+    </main>
+
+    <!-- Modal del Carrito -->
+    <div id="modal-carrito" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Mi Carrito de Compras</h2>
+                <button class="modal-close" id="btn-cerrar-carrito">&times;</button>
+            </div>
+            <div class="modal-body">
+                <ul id="lista-carrito" class="carrito-lista"></ul>
+            </div>
+            <div class="modal-footer">
+                <div class="carrito-total">
+                    <h3>Total: <span id="total-carrito">$0</span></h3>
+                </div>
+                <button class="btn-comprar">Proceder al Pago</button>
+                <button class="btn-seguir-comprando" id="btn-seguir-comprando">Seguir Comprando</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Sobre Nosotros</h4>
+                <p>Downshop es tu tienda online de ropa especial con las mejores marcas y tendencias.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Información</h4>
+                <ul>
+                    <li><a href="#">Preguntas Frecuentes</a></li>
+                    <li><a href="#">Envíos</a></li>
+                    <li><a href="#">Devoluciones</a></li>
+                    <li><a href="#">Términos y Condiciones</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contacto</h4>
+                <p>Email: Santys1629@gmail.com</p>
+                <p>Teléfono: +54 9 11 2345-6789</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 DownShop. Todos los derechos reservados.</p>
+        </div>
+    </footer>
 
     <script src="script.js"></script>
 </body>
