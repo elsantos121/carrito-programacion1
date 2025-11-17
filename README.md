@@ -1,10 +1,10 @@
-# StyleHub - Tienda de Ropa Premium
+# Downshop - Tienda de Ropa Premium
 
 Tienda online profesional desarrollada con HTML5, CSS3 y JavaScript vanilla. Una aplicación moderna de comercio electrónico que permite a los usuarios explorar, filtrar y comprar productos de ropa de alta calidad con una experiencia de usuario excepcional.
 
 ## Descripción del Proyecto
 
-StyleHub es una tienda de ropa virtual que ofrece una interfaz intuitiva y moderna para la compra de prendas. La aplicación incluye un sistema completo de carrito de compras, filtrado de productos por categorías y un proceso de compra simple y directo.
+DownShop es una tienda de ropa virtual que ofrece una interfaz intuitiva y moderna para la compra de prendas. La aplicación incluye un sistema completo de carrito de compras, filtrado de productos por categorías y un proceso de compra simple y directo.
 
 ## Integrantes
 
@@ -77,22 +77,6 @@ carrito-programacion1/
 6. Ajusta las cantidades según sea necesario
 7. Haz clic en "Proceder al Pago" para completar la compra
 
-## Paleta de Colores
+## Link de la pagina
 
-- **Color Primario**: #2c3e50 (Azul oscuro)
-- **Color Secundario**: #e74c3c (Rojo)
-- **Color de Acento**: #3498db (Azul claro)
-- **Fondo Claro**: #ecf0f1
-- **Blanco**: #ffffff
-
-## Funcionalidades Futuras
-
-- Integración con pasarela de pagos real
-- Sistema de autenticación de usuarios
-- Base de datos de productos
-- Historial de compras
-- Wishlist de favoritos
-- Búsqueda avanzada de productos
-- Página de detalles expandida
-- Sistema de reseñas y calificaciones
-- Integración con redes sociales
+https://elsantos121.github.io/carrito-programacion1/
