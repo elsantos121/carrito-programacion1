@@ -1,10 +1,10 @@
-# Downshop - Tienda de Ropa Premium
+# StyleShop - Tienda de Ropa Premium
 
 Tienda online profesional desarrollada con HTML5, CSS3 y JavaScript vanilla. Una aplicación moderna de comercio electrónico que permite a los usuarios explorar, filtrar y comprar productos de ropa de alta calidad con una experiencia de usuario excepcional.
 
 ## Descripción del Proyecto
 
-DownShop es una tienda de ropa virtual que ofrece una interfaz intuitiva y moderna para la compra de prendas. La aplicación incluye un sistema completo de carrito de compras, filtrado de productos por categorías y un proceso de compra simple y directo.
+StyleShop es una tienda de ropa virtual que ofrece una interfaz intuitiva y moderna para la compra de prendas. La aplicación incluye un sistema completo de carrito de compras, filtrado de productos por categorías y un proceso de compra simple y directo.
 
 ## Integrantes
 
